@@ -1,0 +1,17 @@
+@use "./normalize.css";
+@import "./_body/body";
+@import "./_nav/nav";
+@import "./_happy/happy";
+@import "./_about/about";
+@import "./_slider/slider";
+@import "./_deal/deal";
+@import "./_care/care";
+@import "./_footer/footer";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title__span {
+    color: $black;
+  }
