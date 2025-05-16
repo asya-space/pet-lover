@@ -30,11 +30,14 @@
   &__main {
     margin-bottom: $offset;
     max-width: 300px;
+    @include main();
   }
 
-  &__bank {
+  &__que {
     margin-bottom: $offset;
     font-family: $nunito;
+    font-size: 18px;
+    color: $green;
   }
 
   &__txt {
@@ -43,6 +46,20 @@
     font-family: $nunito;
     font-weight: $regular;
     color: $color-xl;
+    line-height: 25px;
+  }
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: 25px;
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      &__descr {
+        @include temp();
+      }
+    }
   }
 }
 

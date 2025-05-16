@@ -463,13 +463,6 @@ body {
 .nav__list__item:not(:last-child) {
   margin-right: 25px;
 }
-.nav__list__item:first-child a {
-  cursor: default;
-}
-.nav__list__item:first-child::after {
-  opacity: 1;
-  width: 100%;
-}
 .nav__list__item::after {
   content: "";
   position: absolute;
@@ -541,7 +534,7 @@ body {
   font-style: normal;
   font-family: "Nunito", sans-serif;
   line-height: 24px;
-  color: #cdcdcd;
+  color: #ffffff;
 }
 .happy__link {
   display: block;
@@ -550,9 +543,10 @@ body {
   min-height: 52px;
   background-color: #ED6436;
   border-radius: 100px;
+  font-family: "Nunito", sans-serif;
   font-size: 17px;
   line-height: 22px;
-  color: #180802;
+  color: #0c0301;
   transition: all 0.3s ease-in-out;
 }
 .happy__link:hover {
@@ -748,7 +742,7 @@ body {
 }
 .our .slider__list__item__card:hover {
   background-color: #F4F2F2;
-  box-shadow: 1px 1px 3px #cdcdcd;
+  box-shadow: 1px 1px 3px #777;
 }
 .our .slider__list__item__card__block {
   position: absolute;
@@ -799,7 +793,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
   line-height: 22px;
-  color: #180802;
+  color: #0c0301;
 }
 .our .slider__list__item__card__link:hover {
   background-color: #FDDCC4;
@@ -818,6 +812,9 @@ body {
   margin-bottom: 10px;
   padding-left: 35px;
   text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #777;
 }
 .our .slider__price-list__item__headline::before {
   content: "";
@@ -867,7 +864,7 @@ body {
   border-radius: 50%;
 }
 .our .slider .prev {
-  border-color: #cdcdcd;
+  border-color: #777;
   border-radius: 50%;
 }
 
@@ -1019,7 +1016,7 @@ body {
   color: #545454;
 }
 .deal__list__item__title:hover {
-  outline-color: #cdcdcd;
+  outline-color: #777;
 }
 .deal__list .inner {
   display: flex;
@@ -1129,10 +1126,18 @@ body {
 .care__main {
   margin-bottom: 20px;
   max-width: 300px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  font-style: normal;
+  line-height: 45px;
+  color: #545454;
 }
-.care_que {
+.care__que {
   margin-bottom: 20px;
   font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: #28a745;
 }
 .care__txt {
   margin-bottom: 20px;
@@ -1140,6 +1145,22 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   color: #4C4C4C;
+  line-height: 25px;
+}
+.care__list {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.care__list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.care__list__item__descr {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 22px;
+  color: #545454;
 }
 
 @media (max-width: 768px) {
@@ -1167,7 +1188,7 @@ body {
     font-size: 25px;
     line-height: 32px;
   }
-  .care_que {
+  .care__bank {
     text-align: center;
   }
   .care__digit {
@@ -1290,5 +1311,5 @@ html {
 }
 
 .title__span {
-  color: #180802;
+  color: #0c0301;
 }/*# sourceMappingURL=style.css.map */

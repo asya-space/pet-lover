@@ -23,7 +23,7 @@
     @include basic();
     font-family: $nunito;
     line-height: $line;
-    color: $grey;
+    color: $white;
   }
 
   &__link {
@@ -33,6 +33,7 @@
     min-height: 52px;
     background-color: $primary;
     border-radius: $hund;
+    font-family: $nunito;
     font-size: 17px;
     line-height: 22px;
     color: $black;

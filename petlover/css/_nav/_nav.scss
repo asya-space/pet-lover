@@ -15,17 +15,6 @@
         margin-right: 25px;
       }
 
-      &:first-child {
-        a {
-          cursor: default;
-        }
-
-        &::after {
-          opacity: 1;
-          width: 100%;
-        }
-      }
-
       &::after {
         content: '';
         position: absolute;
