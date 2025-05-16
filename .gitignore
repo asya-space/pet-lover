@@ -105,10 +105,11 @@ dist
 .tern-port
 
 # general settings
-shelter/css/fonts.css
-shelter/css/normalize.css
+petlover/css/fonts.css
+petlover/css/normalize.css
 
 # optional settings
 .linthtmlrc.json
 package.json
 package-lock.json
+.vscode
