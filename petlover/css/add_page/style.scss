@@ -15,11 +15,23 @@ body {
   margin: 0 auto;
 }
 
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^=flaticon-]:after, [class*=" flaticon-"]:after{
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
 .header {
+  background-color: $white;
   .container {
     display: $flx;
     padding: 30px 40px;
     margin-bottom: 0;
+  }
+
+  &__logo {
+    display: $flx;
+    flex-direction: $col;
+    align-items: flex-start;
   }
 
   &__link {
@@ -97,7 +109,7 @@ body {
   }
 }
 
-.our {
+.service {
   .container {
     padding-right: 40px;
     padding-left: 40px;
@@ -106,7 +118,6 @@ body {
 
   .slider {
     margin-bottom: 0;
-    max-width: 1200px;
 
     &__list > * {
       min-width: $card;
@@ -114,20 +125,23 @@ body {
     }
 
     &__list {
-      margin: 0;
+      margin: $aut;
       margin-bottom: 65px;
-      padding: 0;
+      max-width: 1200px;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 290px);
+      justify-content: $ctr; /* ^_^ */
       gap: $mid;
-      column-gap: 40px;
+      column-gap: 50px;
 
       &__item:not(:last-child) {
         margin-right: 0;
       }
 
       &__item {
-        border-radius: $radius;
+        border-radius: none;
+        min-height: 400px;
+        padding: 2rem;
         transition: all .3s ease-in-out;
 
           &:hover {
@@ -136,14 +150,53 @@ body {
           }
 
         &__card {
+          text-align: $ctr;
           &__btn {
             max-width: $full;
           }
 
-          &__pic {
-            &__img {
-              max-width: $full;
-            }
+          &__name {
+            margin-bottom: 16px;
+            font-family: $nunito;
+            font-weight: 600;
+            font-size: 28px;
+            color: $black;
+          }
+
+          &__sub {
+            margin-bottom: 20px;
+            font-family: $nunito;
+            font-weight: 400;
+            font-size: 16px;
+            color: $dark;
+          }
+
+          &__icon {
+            margin-bottom: 16px;
+            color: $green;
+          }
+
+          &__link {
+            display: inline-block;
+            padding: $pad;
+            max-width: 175px;
+            border-radius: 5px;
+            border: 1px solid $primary;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            @include basic;
+            font-family: $nunito;
+            font-size: 16px;
+            line-height: 100%;
+            color: $black;
+          }
+
+          &__link:hover {
+            background-color: $hov;
+          }
+
+          &__link:active {
+            background-color: $primary;
           }
         }
       }
@@ -199,7 +252,7 @@ body {
 
 .footer {
   .container {
-    background: 96% 98% no-repeat url('../../img/footer-puppy.png');
+    background: 96% 98% no-repeat url('../../img/fashion-cat.png');
   }
 }
 
